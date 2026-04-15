@@ -23,7 +23,7 @@ signed main() {
     rep(i,0,n) cin >> a[i]; 
     rep(i,0,m) cin >> b[i]; 
 
-    for(int bit = 0; bit < 29; bit++) { 
+    for(int bit = 0; bit <= 30; bit++) { 
         rep(i,0,n) ca[i] = (a[i] >> bit) & 1; 
         rep(i,0,m) cb[i] = (b[i] >> bit) & 1; 
         int total = 0; 
