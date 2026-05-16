@@ -17,12 +17,6 @@ int is_op(string& s) {
     if(s == "OR") return 3; 
     return 0; 
 }
-
-// string op(, int type) { 
-//     string res(sz(a), '0') ; 
-//     rep(i,0,)
-// }
-
 signed main() {
 	ios_base::sync_with_stdio(false);
 	cin.tie(0);
