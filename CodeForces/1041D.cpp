@@ -37,8 +37,6 @@ signed main() {
             if(total_cost < h) lo = mi ; 
             else hi = mi;  
         }
-        
-        // cerr << "i: " << i << "  here: " << h + extra[lo] - (i == 0 ? 0 : extra[i - 1]) << "\n"; 
         ans = max(ans, h + extra[lo] - (i == 0 ? 0 : extra[i - 1])); 
     }
     cout << ans << "\n"; 
