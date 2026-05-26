@@ -15,7 +15,6 @@ typedef vector<pii> vii;
 void solve() {
     int n; cin >> n; 
     vvi ch(n); 
-    vector<vl> nums(n); 
     vl val(n), num(n); 
     vi dp(n); 
     for(int node = n - 1; node >= 0; node--) { 
