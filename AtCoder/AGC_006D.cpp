@@ -28,7 +28,7 @@ signed main() {
         pii right = {n - 1, -1}; 
         rep(i,n-1,2*n-1-1) { 
             if(a[i] == a[i + 1]) { 
-                right.first = i - n - 1; 
+                right.first = i - (n - 1); 
                 right.second = a[i]; 
                 break; 
             }
@@ -41,6 +41,7 @@ signed main() {
                 break; 
             }
         }
+        
         bool ok ; 
         if(right.second == -1 && left.second == -1) { 
             ok = (n % 2 == 0) != (a[n - 1] == 1);
