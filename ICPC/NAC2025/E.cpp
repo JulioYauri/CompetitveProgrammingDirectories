@@ -17,7 +17,7 @@ struct Node {
 	Node *l = 0, *r = 0;
 	ll val; 
     int y, c = 1;
-	Node(int val) : val(val), y(rand()) {}
+	Node(ll val) : val(val), y(rand()) {}
 	void recalc();
 };
 
@@ -57,10 +57,6 @@ Node* merge(Node* l, Node* r) {
 	}
 }
 
-Node* ins(Node* t, Node* n, int pos) {
-	auto pa = split(t, pos);
-	return merge(merge(pa.first, n), pa.second);
-}
 
 signed main() {
 	ios_base::sync_with_stdio(false);
