@@ -55,7 +55,7 @@ void solve() {
         lims.push_back(total); 
         reverse(all(eds)); 
     }
-    // cerr << "lims: " << lims[0] << " " << lims[1] << "\n"; 
+    
     if(lims[0] > k || lims[1] < k) { 
         cout << "-1\n"; return; 
     }
