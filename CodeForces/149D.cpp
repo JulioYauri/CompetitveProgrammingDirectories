@@ -65,7 +65,6 @@ signed main() {
             st.pop_back(); 
         }
     }
-    // rep(i,0,n) cerr << par[i] << " "; cerr << "\n"; 
     memset(memo, -1, sizeof(memo)); 
     int ans = 0;
     rep(lp,0,3) rep(rp,0,3) ans = add(ans, dp(0,n-1,lp,rp));  
