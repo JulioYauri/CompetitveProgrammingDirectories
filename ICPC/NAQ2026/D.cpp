@@ -62,12 +62,13 @@ signed main() {
         max_d = max(max_d, (v[j] - v[i]).dist2()); 
         max_d = max(max_d, (v[(j + 1) % n] - v[i]).dist2()); 
     }   
-    ll lo = -1, hi = 1LL << 60; 
-    double d = 2.0 * sqrt(max_d); 
-    while(hi - lo > 1) { 
-        ll mi = lo + (hi - lo) / 2; 
-        if(mi * d + 1e-9 >= k) hi = mi; 
-        else lo = mi; 
-    }
-    cout << hi << "\n"; 
+    double d = 2.0 * sqrtl(max_d); 
+    cout << ll(ceil(double(k) / d) + 1e-8) << "\n"; 
+    // ll lo = -1, hi = 1LL << 60; 
+    // while(hi - lo > 1) { 
+    //     ll mi = lo + (hi - lo) / 2; 
+    //     if(mi * d + 1e-9 >= k) hi = mi; 
+    //     else lo = mi; 
+    // }
+    // cout << hi << "\n"; 
 }
